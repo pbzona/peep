@@ -1,0 +1,26 @@
+{{!< default }}
+
+{{#post}}
+
+<main>
+
+	<header>
+		<h1>{{title}}</h1>
+	</header>
+
+	<article class="{{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+		{{#if feature_image}}
+    <figure style="background-image: url({{feature_image}})">
+    </figure>
+    {{/if}}
+
+		<section>
+			{{content}}
+		</section>
+
+	</article>
+
+</main>
+
+{{/post}}

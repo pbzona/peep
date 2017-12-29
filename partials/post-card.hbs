@@ -1,0 +1,15 @@
+<article class="{{post-class}}">
+	{{#if feature_image}}
+        <a href="{{url}}">
+            <div style="background-image: url({{feature_image}})"></div>
+        </a>
+    {{/if}}
+
+    <div class="post-card__content">
+    	<a href="{{url}}">
+    		<h2>{{title}}</h2>
+    	</a>
+
+    	<p>{{excerpt words="10"}}</p>
+    </div>
+</article>
