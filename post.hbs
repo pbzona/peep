@@ -2,25 +2,31 @@
 
 {{#post}}
 
-<main>
+	<main class="post">
 
-	<header>
-		<h1>{{title}}</h1>
-	</header>
+		<header class="post__header">
+			<h1>{{title}}</h1>
+		</header>
 
-	<article class="{{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+		<section class="post__meta">
+			Posted:
+      <time class="post__date" datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format="DD MMMM YYYY"}}
+      </time> 
+      {{tags prefix=" in "}}
+    </section> 
 
-		{{#if feature_image}}
-    <figure style="background-image: url({{feature_image}})">
-    </figure>
-    {{/if}}
+		<article class="post__main {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+			{{#if feature_image}}
+				<figure class="post__image" style="background-image: url({{feature_image}})">
+				</figure>
+			{{/if}}
 
-		<section>
-			{{content}}
-		</section>
+			<section class="post__content">
+				{{content}}
+			</section>
 
-	</article>
-
-</main>
+		</article>
+	</main>
 
 {{/post}}

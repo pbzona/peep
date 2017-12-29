@@ -15,4 +15,50 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  font-size: 1.6rem;
   color: #333; }
+
+h1 {
+  font-size: 4.8rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4, h5, h6 {
+  font-size: 1.6rem; }
+
+.heading__primary {
+  font-size: 4.8rem; }
+
+.heading__secondary {
+  font-size: 3.6rem; }
+
+.heading__tertiary {
+  font-size: 2.4rem; }
+
+.post {
+  margin: 0 auto;
+  width: 60%; }
+  .post__header {
+    margin-top: 5rem; }
+  .post__meta {
+    margin-bottom: 2rem;
+    font-size: 1.2rem; }
+  .post__main {
+    width: 100%; }
+
+img {
+  width: 100%; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 2rem; }
+
+ol, ul {
+  margin-left: 4rem;
+  margin-bottom: 2rem; }
+
+hr {
+  margin-bottom: 2rem; }
