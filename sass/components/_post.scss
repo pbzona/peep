@@ -33,5 +33,32 @@ hr {
 	margin-bottom: 2rem;
 }
 
+blockquote {
+	//margin-left: 4rem;
+	padding-left: 2rem;
+	border-left: .4rem solid #ccc
+}
+
+code {
+	color: $primary-color;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 2px;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+pre {
+	margin: 0 4rem 2rem;
+
+	& > code {
+		background-color: #eee;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+		padding: 2px;
+	}
+}
+
 
 

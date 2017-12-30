@@ -62,3 +62,24 @@ ol, ul {
 
 hr {
   margin-bottom: 2rem; }
+
+blockquote {
+  padding-left: 2rem;
+  border-left: .4rem solid #ccc; }
+
+code {
+  color: #FF340F;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; }
+
+pre {
+  margin: 0 4rem 2rem; }
+  pre > code {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 2px; }
