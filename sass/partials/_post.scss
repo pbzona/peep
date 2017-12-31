@@ -22,17 +22,37 @@
 		background-position: top;
 		margin-bottom: 2rem;
 	}
+
+	&__nav {
+		display: inline;
+		padding: 2rem;
+
+		&--prev {
+			float: right;
+		}
+
+		&--next {
+			float: left;
+		}
+	}
 }
 
 img {
 	width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin-bottom: 2rem;
 }
 
-ol, ul {
+ol,
+ul {
 	margin-left: 4rem;
 	margin-bottom: 2rem;
 }
@@ -43,7 +63,7 @@ hr {
 
 blockquote {
 	padding-left: 2rem;
-	border-left: .4rem solid #ccc
+	border-left: 0.4rem solid #ccc;
 }
 
 pre {
@@ -59,8 +79,3 @@ code {
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 }
-
-
-
-
-

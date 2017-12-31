@@ -25,6 +25,17 @@
 				{{content}}
 			</section>
 
+			{{#next_post}}
+			<section class="post__nav post__nav--next">
+				<a href="{{url}}">&larr; {{title}}</a>
+			</section>
+			{{/next_post}}
+			{{#prev_post}}
+			<section class="post__nav post__nav--prev">
+				<a href="{{url}}">{{title}} &rarr;</a>
+			</section>
+			{{/prev_post}}
+
 		</article>
 	</main>
 

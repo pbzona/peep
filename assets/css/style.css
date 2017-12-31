@@ -328,14 +328,28 @@ h5, h6 {
     background-size: cover;
     background-position: top;
     margin-bottom: 2rem; }
+  .post__nav {
+    display: inline;
+    padding: 2rem; }
+    .post__nav--prev {
+      float: right; }
+    .post__nav--next {
+      float: left; }
 
 img {
   width: 100%; }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 2rem; }
 
-ol, ul {
+ol,
+ul {
   margin-left: 4rem;
   margin-bottom: 2rem; }
 
@@ -344,7 +358,7 @@ hr {
 
 blockquote {
   padding-left: 2rem;
-  border-left: .4rem solid #ccc; }
+  border-left: 0.4rem solid #ccc; }
 
 pre {
   margin: 0 4rem 2rem; }
