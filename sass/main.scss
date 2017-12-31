@@ -1,5 +1,13 @@
+@import 'base/reset';
+
 @import 'base/variables';
+@import 'base/mixins';
 @import 'base/base';
 @import 'base/typography';
 
-@import 'components/post';
+@import 'partials/index';
+@import 'partials/post';
+@import 'partials/post-card';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/navigation';

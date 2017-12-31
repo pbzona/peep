@@ -1,9 +1,9 @@
 {{!< default}}
 
-<h1>These are my posts</h1>
+{{> header}}
 
-{{#foreach posts}}
+<main class="post-list">
+	{{> post-list}}
+</main>
 
-	{{> "post-card"}}
-
-{{/foreach}}
+{{> footer}}

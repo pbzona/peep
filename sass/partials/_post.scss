@@ -3,16 +3,24 @@
 	width: 60%;
 
 	&__header {
-		margin-top: 5rem;
+		margin-top: 2rem;
+		margin-bottom: 0;
 	}
 
 	&__meta {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		font-size: 1.2rem;
 	}
 
 	&__main {
 		width: 100%;
+	}
+
+	&__image {
+		height: 40rem;
+		background-size: cover;
+		background-position: top;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -34,9 +42,12 @@ hr {
 }
 
 blockquote {
-	//margin-left: 4rem;
 	padding-left: 2rem;
 	border-left: .4rem solid #ccc
+}
+
+pre {
+	margin: 0 4rem 2rem;
 }
 
 code {
@@ -49,16 +60,7 @@ code {
 	box-decoration-break: clone;
 }
 
-pre {
-	margin: 0 4rem 2rem;
 
-	& > code {
-		background-color: #eee;
-		border: 1px solid #ddd;
-		border-radius: 2px;
-		padding: 2px;
-	}
-}
 
 
 

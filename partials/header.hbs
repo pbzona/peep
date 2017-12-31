@@ -1,0 +1,10 @@
+<header class="header">
+	<div class="header__menu">
+		{{navigation}}
+	</div>
+	<div class="header__title {{#is "post"}}header__title--small{{/is}}">
+		<a class="header__title-link" href="{{@blog.url}}">
+			<h1 class="header__title-text">{{@blog.title}}</h1>
+		</a>
+	</div>
+</header>

@@ -1,0 +1,21 @@
+.post-card {
+  border: 1px solid black;
+  padding: 2rem 4rem;
+  margin: 1rem 0;
+
+  @include clearfix;
+
+  &__image {
+    background-position: top;
+    background-size: cover;
+    height: 20rem;
+    width: 30rem;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    display: inline;
+  }
+}
