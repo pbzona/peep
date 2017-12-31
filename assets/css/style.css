@@ -396,19 +396,20 @@ code {
 
 .header__title {
   background-color: orangered;
-  height: 12rem;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding: 3rem; }
   .header__title--small {
-    height: 6rem; }
+    padding: 1rem; }
   .header__title-link, .header__title-link:link, .header__title-link:visited {
-    text-decoration: none;
-    color: #fff; }
+    text-decoration: none; }
   .header__title-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase; }
+  .header__title-desc {
+    margin-bottom: 0;
+    color: #fff; }
 
 .header__text {
   text-decoration: none;

@@ -5,12 +5,12 @@
 
 	&__title {
 		background-color: orangered; //for testing
-		height: 12rem;
 		position: relative;
 		text-align: center;
+		padding: 3rem;
 
 		&--small {
-			height: 6rem;
+			padding: 1rem;
 		}
 
 		&-link {
@@ -18,12 +18,18 @@
 			&:link,
 			&:visited {
 				text-decoration: none;
-				color: $color-white;
 			}
 
 		}
 		&-text {
-			@include absCenter;
+			margin-bottom: 0;
+			color: $color-white;
+			text-transform: uppercase;
+		}
+
+		&-desc {
+			margin-bottom: 0;
+			color: $color-white;
 		}
 	}
 
