@@ -400,15 +400,10 @@ code {
   text-decoration: none;
   color: #333; }
 
-.footer__left {
-  float: left;
-  display: inline;
-  margin-left: 3rem; }
-
-.footer__right {
-  float: right;
-  display: inline;
-  margin-right: 3rem; }
+.footer {
+  display: block;
+  text-align: center;
+  margin-top: 8rem; }
 
 .nav {
   width: 100%;
@@ -422,3 +417,16 @@ code {
   .nav__link {
     list-style-type: none;
     display: inline-flex; }
+
+.pagination {
+  width: 60%;
+  margin: 0 auto 2rem;
+  display: block; }
+  .pagination__next {
+    float: right;
+    display: inline;
+    margin-right: 2rem; }
+  .pagination__prev {
+    float: left;
+    display: inline;
+    margin-left: 2rem; }

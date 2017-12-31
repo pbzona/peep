@@ -1,0 +1,16 @@
+<nav class="pagination" role="pagination">
+  <div class="pagination__prev">
+    {{#if prev}}
+    <a href="{{page_url prev}}">
+      &larr; Newer
+    </a>
+    {{/if}}
+  </div>
+  <div class="pagination__next">
+    {{#if next}}
+    <a href="{{page_url next}}">
+      Older &rarr;
+    </a>
+    {{/if}}
+  </div>
+</nav>

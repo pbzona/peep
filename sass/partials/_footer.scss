@@ -1,13 +1,5 @@
 .footer {
-	&__left {
-		float: left;
-		display: inline;
-		margin-left: 3rem;
-	}
-
-	&__right {
-		float: right;
-		display: inline;
-		margin-right: 3rem;
-	}
+	display: block;
+	text-align: center;
+	margin-top: 8rem;
 }
