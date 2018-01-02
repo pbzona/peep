@@ -333,6 +333,8 @@ h5, h6 {
     background-size: cover;
     background-position: top;
     margin-bottom: 2rem; }
+  .post__content--no-img {
+    margin-top: 4rem; }
   .post__nav {
     display: inline;
     padding: 2rem;
@@ -352,7 +354,7 @@ h5, h6 {
     background-size: cover;
     background-position: top;
     margin-bottom: 2rem; }
-  .page__content {
+  .page__content--no-img {
     margin-top: 4rem; }
 
 .post-card {

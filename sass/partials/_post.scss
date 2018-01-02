@@ -27,6 +27,13 @@
 		margin-bottom: 2rem;
 	}
 
+	&__content {
+
+    &--no-img {
+      margin-top: 4rem;
+    }
+  }
+
 	&__nav {
 		display: inline;
 		padding: 2rem;

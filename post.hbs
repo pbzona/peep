@@ -21,7 +21,7 @@
 				</figure>
 			{{/if}}
 
-			<section class="post__content">
+			<section class="post__content {{#unless feature_image}}post__content--no-img{{/unless}}">
 				{{content}}
 			</section>
 
