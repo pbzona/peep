@@ -348,17 +348,17 @@ h5, h6 {
     .post__nav--next {
       float: left; }
 
-.page-template {
+.page {
   margin: 0 auto;
   width: 60%; }
-  .page-template__main {
+  .page__main {
     width: 100%; }
-  .page-template__image {
+  .page__image {
     height: 40rem;
     background-size: cover;
     background-position: top;
-    margin-bottom: 2rem; }
-  .page-template__content--no-img {
+    margin: 2rem 0; }
+  .page__content--no-img {
     margin-top: 4rem; }
 
 .post-card {

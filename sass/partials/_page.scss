@@ -1,4 +1,4 @@
-.page-template {
+.page {
 	margin: 0 auto;
 	width: 60%;
 
@@ -10,7 +10,7 @@
 		height: 40rem;
 		background-size: cover;
 		background-position: top;
-		margin-bottom: 2rem;
+		margin: 2rem 0;
   }
 
   &__content {

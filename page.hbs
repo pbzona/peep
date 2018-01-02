@@ -12,20 +12,21 @@
     </div>
   </header>
 
-  <main class="page-template">
-    <article class="page-template__main {{post_class}}">
+  <main class="page">
+    <article class="page__main {{post_class}}">
 
       {{#if feature_image}}
-      <figure class="page-template__image" style="background-image: url({{feature_image}})">
+      <figure class="page__image" style="background-image: url({{feature_image}})">
       </figure>
       {{/if}}
 
-      <section class="page-template__content {{#unless feature_image}}page-template__content--no-img{{/unless}}">
+      <section class="page__content {{#unless feature_image}}page__content--no-img{{/unless}}">
         {{content}}
       </section>
 
-      {{> footer}}
     </article>
   </main>
+
+  {{> footer}}
 
 {{/post}}
