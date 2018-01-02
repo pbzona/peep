@@ -53,3 +53,7 @@ code {
 a, a:link, a:visited {
 	color: $color-primary;
 }
+
+mark, *::selection {
+	background-color: lighten($color-primary-light-2, 10%);
+}
