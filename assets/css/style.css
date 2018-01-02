@@ -333,7 +333,8 @@ h5, h6 {
     margin-bottom: 2rem; }
   .post__nav {
     display: inline;
-    padding: 2rem; }
+    padding: 2rem;
+    margin-bottom: 2rem; }
     .post__nav--prev {
       float: right; }
     .post__nav--next {
