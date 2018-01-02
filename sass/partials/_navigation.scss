@@ -13,5 +13,15 @@
 	&__link {
 		list-style-type: none;
 		display: inline-flex;
+		padding: 1rem;
+		width: auto;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				color: $color-primary-light-2;
+			}
+		}
 	}
 }

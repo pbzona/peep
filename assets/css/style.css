@@ -401,7 +401,13 @@ h5, h6 {
     margin: 0; }
   .nav__link {
     list-style-type: none;
-    display: inline-flex; }
+    display: inline-flex;
+    padding: 1rem;
+    width: auto; }
+    .nav__link a {
+      text-decoration: none; }
+      .nav__link a:hover {
+        color: #67B0E0; }
 
 .pagination {
   width: 60%;
