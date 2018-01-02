@@ -436,3 +436,7 @@ h5, h6 {
     float: left;
     display: inline;
     margin-left: 2rem; }
+  .pagination__link {
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase; }

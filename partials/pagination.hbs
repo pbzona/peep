@@ -1,15 +1,15 @@
 <nav class="pagination" role="pagination">
   <div class="pagination__prev">
     {{#if prev}}
-    <a href="{{page_url prev}}">
-      &larr; Newer
+    <a class="pagination__link" href="{{page_url prev}}">
+      &larr; PREVIOUS PAGE
     </a>
     {{/if}}
   </div>
   <div class="pagination__next">
     {{#if next}}
-    <a href="{{page_url next}}">
-      Older &rarr;
+    <a class="pagination__link" href="{{page_url next}}">
+      NEXT PAGE &rarr;
     </a>
     {{/if}}
   </div>

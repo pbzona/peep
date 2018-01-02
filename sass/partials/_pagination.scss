@@ -14,4 +14,10 @@
 		display: inline;
     margin-left: 2rem;
 	}
+
+	&__link {
+		font-size: 2rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
 }
