@@ -344,17 +344,17 @@ h5, h6 {
     .post__nav--next {
       float: left; }
 
-.page {
+.page-template {
   margin: 0 auto;
   width: 60%; }
-  .page__main {
+  .page-template__main {
     width: 100%; }
-  .page__image {
+  .page-template__image {
     height: 40rem;
     background-size: cover;
     background-position: top;
     margin-bottom: 2rem; }
-  .page__content--no-img {
+  .page-template__content--no-img {
     margin-top: 4rem; }
 
 .post-card {
