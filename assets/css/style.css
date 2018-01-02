@@ -342,6 +342,19 @@ h5, h6 {
     .post__nav--next {
       float: left; }
 
+.page {
+  margin: 0 auto;
+  width: 60%; }
+  .page__main {
+    width: 100%; }
+  .page__image {
+    height: 40rem;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 2rem; }
+  .page__content {
+    margin-top: 4rem; }
+
 .post-card {
   border: 1px solid black;
   padding: 2rem 4rem;

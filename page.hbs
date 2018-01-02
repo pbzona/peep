@@ -1,0 +1,31 @@
+{{!< default }}
+
+{{#post}}
+
+  {{!-- Using a page-specific header to display the page title rather than site name --}}
+  <header class="header">
+    <div class="header__menu">
+      {{navigation}}
+    </div>
+    <div class="header__title {{#is " post "}}header__title--small{{/is}}">
+      <h1 class="header__title-text">{{title}}</h1>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="page__main {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+      {{#if feature_image}}
+      <figure class="page__image" style="background-image: url({{feature_image}})">
+      </figure>
+      {{/if}}
+
+      <section class="page__content">
+        {{content}}
+      </section>
+
+      {{> footer}}
+    </article>
+  </main>
+
+{{/post}}
