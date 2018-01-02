@@ -278,13 +278,16 @@ pre {
   margin: 0 4rem 2rem; }
 
 code {
-  color: #FF340F;
+  color: #1A88D0;
   background-color: #eee;
   border: 1px solid #ddd;
   border-radius: 2px;
   padding: 2px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone; }
+
+a, a:link, a:visited {
+  color: #1A88D0; }
 
 body {
   font-family: 'Merriweather', serif;
@@ -336,42 +339,6 @@ h5, h6 {
     .post__nav--next {
       float: left; }
 
-img {
-  width: 100%; }
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 2rem; }
-
-ol,
-ul {
-  margin-left: 4rem;
-  margin-bottom: 2rem; }
-
-hr {
-  margin-bottom: 2rem; }
-
-blockquote {
-  padding-left: 2rem;
-  border-left: 0.4rem solid #ccc; }
-
-pre {
-  margin: 0 4rem 2rem; }
-
-code {
-  color: #FF340F;
-  background-color: #eee;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 2px;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone; }
-
 .post-card {
   border: 1px solid black;
   padding: 2rem 4rem;
@@ -395,7 +362,7 @@ code {
   width: 100%; }
 
 .header__title {
-  background-color: orangered;
+  background-image: linear-gradient(to bottom, #1A88D0, #3F9BD7);
   position: relative;
   text-align: center;
   padding: 3rem; }

@@ -4,7 +4,8 @@
 	}
 
 	&__title {
-		background-color: orangered; //for testing
+		// background-color: $color-blue;
+		background-image: linear-gradient(to bottom, $color-primary, $color-primary-light-1);
 		position: relative;
 		text-align: center;
 		padding: 3rem;

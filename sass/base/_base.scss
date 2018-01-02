@@ -41,11 +41,15 @@ pre {
 }
 
 code {
-	color: $primary-color;
+	color: $color-primary;
 	background-color: #eee;
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	padding: 2px;
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
+}
+
+a, a:link, a:visited {
+	color: $color-primary;
 }
