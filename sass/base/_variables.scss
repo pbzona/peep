@@ -1,8 +1,11 @@
 $color-primary: #45B01E;
-$color-primary-light-1: #63C141;
-$color-primary-light-2: #89DB6B;
-$color-primary-dark-1: #308D0E;
-$color-primary-dark-2: #1D6B00;
+
+// This automatically generates a full color palette for the site based on the primary color
+// You can edit these if you want, but these are meant to be sane defaults
+$color-primary-light-1: desaturate(lighten($color-primary, 13.5%), 10%);
+$color-primary-light-2: desaturate(lighten($color-primary, 25%), 8%);
+$color-primary-dark-1: saturate(darken($color-primary, 12.5%), 6%);
+$color-primary-dark-2: saturate(darken($color-primary, 19%), 10%);
 
 $color-black: #333;
 $color-gray: #888;

@@ -291,7 +291,7 @@ a, a:link, a:visited {
   color: #45B01E; }
 
 mark, *::selection {
-  background-color: #aae594; }
+  background-color: #aee899; }
 
 body {
   font-family: 'Merriweather', serif;
@@ -385,7 +385,7 @@ h5, h6 {
   width: 100%; }
 
 .header__title {
-  background-image: linear-gradient(to bottom, #45B01E, #63C141);
+  background-image: linear-gradient(to bottom, #45B01E, #68d142);
   position: relative;
   text-align: center;
   padding: 3rem; }
@@ -434,7 +434,7 @@ h5, h6 {
     .nav__link a {
       text-decoration: none; }
       .nav__link a:hover {
-        color: #89DB6B; }
+        color: #8dde6f; }
 
 .pagination {
   width: 60%;
