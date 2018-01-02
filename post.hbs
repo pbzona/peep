@@ -3,8 +3,8 @@
 {{#post}}
 
 	{{> header}}
-	<main class="post">
-		<article class="post__main {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+	<main class="{{post_class}}">
+		<article class="post__main {{#unless feature_image}}no-image{{/unless}}">
 			<header class="post__header">
 				<h1 class="post__header-text">{{title}}</h1>
 			</header>
