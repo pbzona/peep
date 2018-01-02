@@ -321,6 +321,8 @@ h5, h6 {
   .post__header {
     margin-top: 2rem;
     margin-bottom: 0; }
+    .post__header-text {
+      margin-bottom: 0; }
   .post__meta {
     margin-bottom: 1rem;
     font-size: 1.2rem; }

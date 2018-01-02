@@ -6,12 +6,12 @@
 	<main class="post">
 		<article class="post__main {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 			<header class="post__header">
-				<h1>{{title}}</h1>
+				<h1 class="post__header-text">{{title}}</h1>
 			</header>
 
 			<section class="post__meta">
-				<time class="post__date" datetime="{{date format='YYYY-MM-DD'}}">
-					{{date format="DD MMMM YYYY"}}
+				<time class="post__date" datetime="{{date format="MMMM DD YYYY"}}">
+					{{date format="MMMM DD YYYY"}}
 				</time>
 				{{tags prefix=" in "}}
 			</section>
