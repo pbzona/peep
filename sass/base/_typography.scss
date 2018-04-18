@@ -27,6 +27,11 @@ h5, h6 {
 	font-size: 1.6rem;
 }
 
+h1, h2, h3 {
+	font-weight: 600;
+	@include textify;
+}
+
 // .heading {
 // 	&__primary {
 // 		font-size: 4.8rem;

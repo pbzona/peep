@@ -12,3 +12,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@mixin textify {
+	font-family: $sans;
+	text-transform: uppercase;
+}

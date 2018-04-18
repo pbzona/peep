@@ -15,6 +15,9 @@
 		display: inline-flex;
 		padding: 1rem;
 		width: auto;
+		font-weight: 600;
+		letter-spacing: 2px;
+		@include textify;
 
 		a {
 			text-decoration: none;

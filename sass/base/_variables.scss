@@ -10,3 +10,6 @@ $color-primary-dark-2: saturate(darken($color-primary, 19%), 10%);
 $color-black: #333;
 $color-gray: #888;
 $color-white: #fff;
+
+// Font stacks for easier changes
+$sans: 'Poppins', Helvetica, Arial, sans-serif;
