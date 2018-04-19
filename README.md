@@ -1,7 +1,6 @@
 # Sprout
 
-This is a minimal theme for [Ghost](https://ghost.org). And when I say minimal,
-I mean minimal.
+This is a minimal theme for [Ghost](https://ghost.org).
 
 The goal for Sprout is to create a super simple base from which I (or you!) can create the theme you really want for your blog. While Casper and other starter themes look great, I've found them to be opinionated. When building themes on top of other themes, I find myself tearing out a bunch of code before I even have something workable, and so I started this theme from scratch to avoid that problem.
 
