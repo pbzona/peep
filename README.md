@@ -1,6 +1,6 @@
 # Peep
 
-Peep is a theme for [Ghost](https://ghost.org), influenced by the things I wanted on my own blog but couldn't find in other themes.
+Peep is a theme for [Ghost](https://ghost.org), influenced by the things I wanted on my own blog but couldn't find in other themes. Most of the structure is built on top of my minimal [Sprout theme](https://github.com/pbzona/sprout).
 
 ![Peep desktop view](https://s3.amazonaws.com/peepthemesamples/peep-desktop.png)
 
@@ -14,7 +14,7 @@ Peep follows a modified version of the [Ghost Theme Configuration Approach](http
 
 ### Contact Form
 
-The Peep contact form is powered by AWS Lambda, and its is optional. To add it, follow the steps [here](https://www.cloudassessments.com/blog/how-to-build-a-serverless-contact-form-on-aws/) to create a serverless contact form, and add the following to the **Blog Header** section in your Ghost admin (under **Code injection**):
+The Peep contact form is powered by AWS Lambda, and it is optional. To add it, follow the steps [here](https://www.cloudassessments.com/blog/how-to-build-a-serverless-contact-form-on-aws/) to create a serverless contact form, and add the following to the **Blog Header** section in your Ghost admin (under **Code injection**):
 
 ```
 <script>window.__themeCfg.contactForm = 'your API Gateway endpoint';</script>
@@ -24,7 +24,7 @@ Here's what it looks like on the site:
 
 ![Peep contact form](https://s3.amazonaws.com/peepthemesamples/peep-contact.png)
 
-*Note: The contact form is a static page that you can enable by creating a post with the slug `/contact` and setting it as a *page*. If you don't want to use it, or want to use your own contact page, you can remove the template by deleting the `page-contact.hbs` file from the theme.
+*Note: The contact form is a static page that you can enable by creating a post with the slug `/contact` and setting it as a *page*. If you don't want to use it, or want to use your own contact page, you can remove the template by deleting the `page-contact.hbs` file from the theme.*
 
 Support for social media buttons and Disqus comments via code injection is coming soon!
 
