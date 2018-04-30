@@ -1,0 +1,65 @@
+.contact-form {
+  text-align: center;
+  padding: 8rem 8rem 2rem;
+
+  & textarea {
+    resize: none;
+  }
+
+  &__field, &__button {
+    border: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-family: $sans;
+    color: $color-black;
+  }
+
+  &__field {
+    font-size: 1.8rem;
+    transition: .4s all ease;
+    border-bottom: .4rem solid $color-black;
+    font-weight: 400;
+
+    &:focus {
+      background-color: $color-primary-light-1; //lighten($color-primary-light-2, 5%);
+      border-bottom: .4rem solid $color-primary-dark-1;
+    }
+
+    &::placeholder {
+      color: $color-black;
+    }
+
+    &--email {
+      &:invalid {
+        border-bottom: .4rem solid $color-secondary;
+      }
+    }
+
+    &--body {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__button {
+    background-color: $color-primary;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: .4s all ease;
+    font-weight: 700;
+
+    &:focus, &:hover {
+      background-color: $color-primary-dark-2;
+      outline: none;
+    }
+  }
+}
+
+.response-handler {
+  height: 10rem;
+  transition: .4s all ease;
+  text-align: center;
+}

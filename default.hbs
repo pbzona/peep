@@ -7,15 +7,15 @@
 	<title>{{meta_title}}</title>
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+	{{> header_css}}
+	{{> header_scripts}}
 	{{ghost_head}}
 </head>
 
 <body class="{{body_class}}">
 	{{{body}}}
 	{{ghost_foot}}
+	<script src="{{asset "js/bundle.js"}}"></script>
 </body>
 
 </html>

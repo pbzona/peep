@@ -1,17 +1,31 @@
 <article class="{{post-class}} post-card">
-	{{#if feature_image}}
-		<a class="post-card__link" href="{{url}}">
-			<img class="post-card__image" src="{{feature_image}}">
-			</img>
-		</a>
-	{{/if}}
+	<div class="post-card__container post-card__container--left">
+		{{#if feature_image}}
+			<a class="post-card__link" href="{{url}}">
+				<img class="post-card__image" src="{{feature_image}}">
+				</img>
+			</a>
+		{{/if}}
+	</div>
 
-	<div class="post-card__content">
-		<a href="{{url}}">
-			<h2>{{title}}</h2>
-		</a>
-
-		<p>{{excerpt words="36"}}...</p>
-		<a class="post-card__read-more" href="{{url}}">Read More &rarr;</a>
+	<div class="post-card__container post-card__container--right">
+		<div class="post-card__content">
+			<a href="{{url}}">
+				<h2>{{title}}</h2>
+			</a>
+			<p class="post-card__excerpt">{{excerpt characters="140"}}...</p>
+			{{!-- <a class="post-card__read-more" href="{{url}}">Read More &rarr;</a> --}}
+			{{#if tags}}
+				<div class="tag">
+					<ul class="tag__list">
+						{{#foreach tags}}
+						<li class="tag__item">
+							<a class="tag__link" href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+						</li>
+						{{/foreach}}
+					</ul>
+				</div>
+			{{/if}}
+		</div>
 	</div>
 </article>

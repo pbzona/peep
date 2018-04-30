@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
@@ -13,6 +13,9 @@ html {
 body {
 	box-sizing: border-box;
 	position: relative;
+	background-color: #222;
+	min-height: 100vh;
+	padding-bottom: 4rem;
 }
 
 img {
@@ -23,9 +26,17 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 2rem;
 }
 
+p, pre, code {
+	line-height: 2.6rem;
+}
+
 ol, ul {
 	margin-left: 4rem;
 	margin-bottom: 2rem;
+}
+
+ul > li {
+	list-style-type: disc;
 }
 
 hr {
@@ -34,21 +45,29 @@ hr {
 
 blockquote {
 	padding-left: 2rem;
-	border-left: .4rem solid #ccc
+	border-left: .4rem solid #888
 }
 
 pre {
+	font-size: 1.6rem;
 	margin: 0 4rem 2rem;
 }
 
 code {
-	color: $color-primary;
-	background-color: #eee;
-	border: 1px solid #ddd;
-	border-radius: 2px;
+	color: $color-secondary;
+	background-color: #ddd;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 	padding: 2px;
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
+}
+
+pre, code {
+	word-break: break-all;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	white-space: normal;
 }
 
 a, a:link, a:visited {
@@ -56,5 +75,7 @@ a, a:link, a:visited {
 }
 
 mark, *::selection {
-	background-color: lighten($color-primary-light-2, 10%);
+	background: $color-primary;
+	color: $color-black;
+	line-height: 2.6rem;
 }

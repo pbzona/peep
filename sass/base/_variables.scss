@@ -1,4 +1,4 @@
-$color-primary: #45B01E;
+$color-primary: #FFBF33;
 
 // This automatically generates a full color palette for the site based on the primary color
 // You can edit these if you want, but these are meant to be sane defaults
@@ -7,9 +7,20 @@ $color-primary-light-2: desaturate(lighten($color-primary, 25%), 8%);
 $color-primary-dark-1: saturate(darken($color-primary, 12.5%), 6%);
 $color-primary-dark-2: saturate(darken($color-primary, 19%), 10%);
 
-$color-black: #333;
-$color-gray: #888;
-$color-white: #fff;
+$color-secondary: #FF4334;
+$color-secondary-light-1: desaturate(lighten($color-secondary, 13.5%), 10%);
+$color-secondary-light-2: desaturate(lighten($color-secondary, 25%), 8%);
+$color-secondary-dark-1: saturate(darken($color-secondary, 12.5%), 6%);
+$color-secondary-dark-2: saturate(darken($color-secondary, 19%), 10%);
+
+$color-black: #222;
+$color-gray-dark: #666;
+$color-gray: #aaa;
+$color-gray-light: #c8c8c8;
+$color-white: #e9e9e9;
 
 // Font stacks for easier changes
-$sans: 'Poppins', Helvetica, Arial, sans-serif;
+// $sans: 'Kanit', Verdana, Arial, sans-serif;
+// $serif: 'Taviraj', Times, Georgia, serif;
+$sans: 'Oswald', sans-serif;
+$serif: 'Droid Serif', serif;

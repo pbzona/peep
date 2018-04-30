@@ -1,19 +1,18 @@
 .pagination {
-  width: 60%;
+	width: 60%;
+	position: relative;
   margin: 0 auto 2rem;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	@include textify;
 
 	&__next {
-		float: right;
-		display: inline;
     margin-right: 2rem;
 	}
 
 	&__prev {
-		float: left;
-		display: inline;
-    margin-left: 2rem;
+		margin-left: 2rem;
 	}
 
 	&__link {

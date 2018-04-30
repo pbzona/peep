@@ -1,17 +1,20 @@
 {
-  "name": "sprout",
+  "name": "peep",
   "version": "1.0.0",
-  "description": "",
+  "description": "A theme for Ghost",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "node-sass --watch sass/main.scss assets/css/style.css"
+    "sass:watch": "node-sass --watch sass/main.scss assets/css/style.css",
+    "sass:build": "node-sass sass/main.scss assets/css/style.css",
+    "js:build": "browserify assets/js/main.js -o assets/js/bundle.js"
   },
   "author": {
     "email": "phil.b.zona@gmail.com"
   },
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "browserify": "^16.2.0"
   },
   "config": {
     "posts_per_page": 5

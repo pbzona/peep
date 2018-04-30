@@ -7,6 +7,7 @@
 	&__list {
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		margin: 0;
 	}
 
@@ -14,17 +15,42 @@
 		list-style-type: none;
 		display: inline-flex;
 		padding: 1rem;
-		width: auto;
-		font-weight: 600;
+		width: 100%;
+		font-weight: 700;
 		letter-spacing: 2px;
+		margin: 0;
+
 		@include textify;
+		transition: .3s all ease;
+
+		&:hover {
+			background-image: linear-gradient(
+				to bottom,
+				rgba($color-primary, 1) 60%,
+				rgba(lighten($color-primary-dark-1, 5%), 1)
+			);
+
+			a {
+				color: $color-black;
+			}
+		}
 
 		a {
+			text-align: center;
+			margin: 0 auto;
 			text-decoration: none;
+		}
+	}
 
-			&:hover {
-				color: $color-primary-light-2;
-			}
+	&__active {
+		background-image: linear-gradient(
+			to bottom,
+			rgba($color-primary, 1) 65%,
+			rgba(lighten($color-primary-dark-1, 5%), 1)
+		);
+
+		a {
+			color: $color-black;
 		}
 	}
 }
