@@ -402,12 +402,18 @@ small {
     display: inline;
     padding: 2rem;
     font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase; }
-    .post__nav--prev {
-      float: right; }
+    .post__nav--item {
+      flex-grow: 1;
+      margin: 0 .4rem 1rem; }
     .post__nav--next {
-      float: left; }
+      text-align: left; }
+    .post__nav--prev {
+      text-align: right; }
 
 .page {
   margin: 0 auto;
