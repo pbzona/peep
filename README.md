@@ -69,7 +69,7 @@ I'm open to adding more as I have a need, but feel free to either change them up
 
 ## Development
 
-I run my sites on Ghost because the theme system is just insanely fun to work with. If you want to mess with my theme (or create your own), I recommend starting [here](https://docs.ghost.org/docs/install-local). Peep is compatible with Ghost v1.19 and above, so be sure to upgrade your local installation before running it.
+I run my sites on Ghost because the theme system is just insanely fun to work with. If you want to mess with my theme (or create your own), I recommend starting [here](https://docs.ghost.org/docs/install-local). Peep is compatible with Ghost v1.19, and has been tested up to Ghost v1.22, so be sure to upgrade your local installation before running it.
 
 ## TODO
 
