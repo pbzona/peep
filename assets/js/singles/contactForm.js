@@ -7,7 +7,7 @@ function sendDataToLambda(e) {
   var formSubject = `New message from ${window.location.hostname}`;
   var formMessage = document.getElementById('form-body').value;
 
-  var endpoint = window.__themeCfg.contactForm;
+  var endpoint = window.__peepCfg.contactForm;
 
   var body = {
     email: formEmail,

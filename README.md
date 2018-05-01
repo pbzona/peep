@@ -10,14 +10,14 @@ To install Peep on your own Ghost blog, download the repository as a zip file an
 
 ## Configuration
 
-Peep follows a modified version of the [Ghost Theme Configuration Approach](https://github.com/unwitting/gtca). While the official GTCA defines a list of supported configuration properties, I've used their method to integrate a contact form into the theme via a configuration property that falls outside the official spec. Future configuration options will be added via GTCA as well.
+Peep adheres to the [Ghost Theme Configuration Approach](https://github.com/unwitting/gtca), and contains a separate configuration object for options that fall outside the GTCA spec. GTCA defines a list of supported configuration properties in their project, but I've used their method to integrate a contact form into the theme via the `__peepCfg` configuration object as well. Future configuration options will be added via both of these methods, depending on their scope.
 
 ### Contact Form
 
 The Peep contact form is powered by AWS Lambda, and it is optional. To add it, follow the steps [here](https://www.cloudassessments.com/blog/how-to-build-a-serverless-contact-form-on-aws/) to create a serverless contact form, and add the following to the **Blog Header** section in your Ghost admin (under **Code injection**):
 
 ```
-<script>window.__themeCfg.contactForm = 'your API Gateway endpoint';</script>
+<script>window.__peepCfg.contactForm = 'your API Gateway endpoint';</script>
 ```
 
 Here's what it looks like on the site:
@@ -62,7 +62,7 @@ Languages supported by this theme (with name to use after initial backticks):
 - C-like (clike)
 - Bash (bash)
 - Python (python)
-- HTML (markup)
+- Markup (markup)
 - CSS (css)
 
 I'm open to adding more as I have a need, but feel free to either change them up in your own version by downloading Prism with additional language selections, or make a PR.
