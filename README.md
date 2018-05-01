@@ -24,7 +24,16 @@ Here's what it looks like on the site:
 
 ![Peep contact form](https://s3.amazonaws.com/peepthemesamples/peep-contact.png)
 
-*Note: The contact form is a static page that you can enable by creating a post with the slug `/contact` and setting it as a *page*. If you don't want to use it, simply do not set the `window.__peepCfg.contactForm` script in your header and the page will display your content normally.*
+The contact form is a static page that you can enable by creating a post with the slug `/contact` and setting it as a *page*. If you don't want to use it, simply do not set the `window.__peepCfg.contactForm` script in your header and the page will display your content normally.
+
+A confirmation message will be displayed below the contact form when the message is successfully sent (or if it isn't, an error will be shown). You can set custom messages for these by adding the following to your **Blog Header** in the Ghost admin:
+
+```
+<script>window.__peepCfg.contactSuccess = 'Your custom success message';</script>
+<script>window.__peepCfg.contactError = 'Your custom error message';</script>
+```
+
+### Other Theme Configuration Settings
 
 Support for social media buttons and Disqus comments via code injection is coming soon!
 

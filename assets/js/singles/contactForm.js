@@ -35,10 +35,10 @@ function sendDataToLambda(e) {
 
   fetch(lambdaRequest)
     .then(data => {
-      response.innerText = `Thanks for your message, I'll get back to you as soon as possible`;
+      response.innerText = window.__peepCfg.contactSuccess ? window.__peepCfg.contactSuccess : `Thanks for your message, I'll get back to you as soon as possible`;
     })
     .catch(err => {
-      response.innerText = `Something went wrong, please try again`;
+      response.innerText = window.__peepCfg.contactError ? window.__peepCfg.contactError :`Something went wrong, please try again`;
     });
 
   document.getElementById('contact-form').reset();
