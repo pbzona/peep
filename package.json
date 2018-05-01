@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "sass:watch": "node-sass --watch sass/main.scss assets/css/style.css",
-    "sass:build": "node-sass sass/main.scss assets/css/style.css",
+    "sass:compile": "node-sass sass/main.scss assets/css/style.comp.css",
+    "css:concat": "concat -o assets/css/style.concat.css assets/css/prism.css assets/css/style.comp.css",
+    "css:prefix": "postcss --use autoprefixer -b 'last 5 versions' assets/css/style.concat.css -o assets/css/style.prefix.css",
+    "css:compress": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
+    "css:build": "npm-run-all sass:compile css:concat css:prefix css:compress",
     "js:build": "browserify assets/js/main.js -o assets/js/bundle.js"
   },
   "author": {
@@ -18,5 +22,11 @@
   },
   "config": {
     "posts_per_page": 5
+  },
+  "dependencies": {
+    "autoprefixer": "^8.4.1",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0"
   }
 }

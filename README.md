@@ -71,6 +71,12 @@ I'm open to adding more as I have a need, but feel free to either change them up
 
 I run my sites on Ghost because the theme system is just insanely fun to work with. If you want to mess with my theme (or create your own), I recommend starting [here](https://docs.ghost.org/docs/install-local). Peep is compatible with Ghost v1.19, and has been tested up to Ghost v1.22, so be sure to upgrade your local installation before running it.
 
+### Styles
+
+Peep uses SCSS within the `sass/` directory, which gets compiled into a `style.css` file within `assets/css/`.
+
+To run a development mode that watches for changes, compiles them, and applies them to your site in real time, run `npm run sass:watch`. If you make changes you want to keep, you can build a production ready stylesheet (compiled, prefixed, minified) by running `npm run css:build`.
+
 ## TODO
 
 Here are a few of my plans for the immediate future:
