@@ -81,5 +81,4 @@ Here are a few of my plans for the immediate future:
 - Add social media configuration
 - Add comments
 - Author pages?
-- Handle stupid non-fatal `page` class error
 

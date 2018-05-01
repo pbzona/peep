@@ -415,17 +415,17 @@ small {
     .post__nav--prev {
       text-align: right; }
 
-.page {
+.blog-page {
   margin: 0 auto;
   width: 60%; }
-  .page__main {
+  .blog-page__main {
     width: 100%; }
-  .page__image {
+  .blog-page__image {
     height: 40rem;
     background-size: cover;
     background-position: top;
     margin: 2rem 0; }
-  .page__content--no-img {
+  .blog-page__content--no-img {
     margin-top: 4rem; }
 
 .post-card {

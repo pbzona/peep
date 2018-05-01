@@ -13,14 +13,14 @@
   </header>
 
   <main class="{{post_class}}">
-    <article class="page__main">
+    <article class="blog-page__main">
 
       {{#if feature_image}}
-      <figure class="page__image" style="background-image: url({{feature_image}})">
+      <figure class="blog-page__image" style="background-image: url({{feature_image}})">
       </figure>
       {{/if}}
 
-      <section class="page__content {{#unless feature_image}}page__content--no-img{{/unless}}">
+      <section class="blog-page__content {{#unless feature_image}}blog-page__content--no-img{{/unless}}">
         {{content}}
       </section>
 
