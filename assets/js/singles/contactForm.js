@@ -1,4 +1,16 @@
-document.getElementById('contact-form').addEventListener('submit', sendDataToLambda);
+var form = document.getElementById('contact-form')
+form.addEventListener('submit', sendDataToLambda);
+
+var response = document.getElementById('response');
+var contactPageContent = document.getElementById('contact-page-content');
+
+if (!window.__peepCfg.contactForm) {
+  form.style.display = 'none';
+  document.querySelector('.contact-form').style.padding = '0';
+  document.querySelector('.response-handler').style.height = '0';
+  contactPageContent.style.display = 'block';
+
+}
 
 function sendDataToLambda(e) {
   e.preventDefault();
@@ -21,7 +33,6 @@ function sendDataToLambda(e) {
     body: JSON.stringify(body)
   });
 
-  var response = document.getElementById('response');
   fetch(lambdaRequest)
     .then(data => {
       response.innerText = `Thanks for your message, I'll get back to you as soon as possible`;

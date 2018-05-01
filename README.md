@@ -24,7 +24,7 @@ Here's what it looks like on the site:
 
 ![Peep contact form](https://s3.amazonaws.com/peepthemesamples/peep-contact.png)
 
-*Note: The contact form is a static page that you can enable by creating a post with the slug `/contact` and setting it as a *page*. If you don't want to use it, or want to use your own contact page, you can remove the template by deleting the `page-contact.hbs` file from the theme.*
+*Note: The contact form is a static page that you can enable by creating a post with the slug `/contact` and setting it as a *page*. If you don't want to use it, simply do not set the `window.__peepCfg.contactForm` script in your header and the page will display your content normally.*
 
 Support for social media buttons and Disqus comments via code injection is coming soon!
 
