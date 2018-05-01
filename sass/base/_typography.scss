@@ -28,9 +28,14 @@ h3 {
 	font-family: $sans;
 	font-weight: 400;
 	text-transform: uppercase;
+	color: $color-primary;
 }
 
 h4, h5, h6 {
+	font-family: $sans;
+	font-style: italic;
+	text-transform: uppercase;
+	color: $color-primary;
 	font-size: 1.8rem;
 }
 

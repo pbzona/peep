@@ -32,6 +32,41 @@ Support for social media buttons and Disqus comments via code injection is comin
 
 While the color scheme is not configurable via the admin panel, I have added what I think is a fairly simple way to change the color palette across the theme with just one or two changes. If you're not fan of the yellow on black, you can modify the primary color by going to `sass/base/_variables.scss` and changing the `$color-primary` and `$color-secondary` values to whatever you want. When you're done, be sure to compile the SASS by running `npm run sass:build` from the root of the theme directory.
 
+## Code Highlighting
+
+This theme now includes [Prism](http://prismjs.com/) for code syntax highlighting, in addition to my basic styles for inline code.
+
+To use inline code:
+
+    `var here = 'your inline code'`
+
+To use code blocks with the default style (light gray background, red text, same as inline style):
+
+    ```
+    var myCode = 'this is some code';
+    console.log(myCode);
+    return someValue;
+    ```
+
+To use Prism, which includes full syntax highlighting in the Tomorrow Night theme, add the language name after the opening set of backticks:
+
+    ```javascript
+    var myArray = arr.map(function(el) {
+        return el * 2;
+    });
+    ```
+
+Languages supported by this theme (with name to use after initial backticks):
+
+- JavaScript (javascript)
+- C-like (clike)
+- Bash (bash)
+- Python (python)
+- HTML (markup)
+- CSS (css)
+
+I'm open to adding more as I have a need, but feel free to either change them up in your own version by downloading Prism with additional language selections, or make a PR.
+
 ## Development
 
 I run my sites on Ghost because the theme system is just insanely fun to work with. If you want to mess with my theme (or create your own), I recommend starting [here](https://docs.ghost.org/docs/install-local). Peep is compatible with Ghost v1.19 and above, so be sure to upgrade your local installation before running it.
@@ -44,7 +79,6 @@ Here are a few of my plans for the immediate future:
 - Better CSS build pipeline
 - Better JS bundling
 - Add social media configuration
-- Add Prism support for code snippets
 - Add comments
 - Author pages?
 - Handle stupid non-fatal `page` class error

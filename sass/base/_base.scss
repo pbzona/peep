@@ -59,6 +59,7 @@ code {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 2px;
+	margin: 0 .2rem;
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 }
@@ -68,6 +69,10 @@ pre, code {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	white-space: normal;
+}
+
+pre > code {
+	border: none;
 }
 
 a, a:link, a:visited {

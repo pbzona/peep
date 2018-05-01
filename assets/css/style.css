@@ -294,6 +294,7 @@ code {
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 2px;
+  margin: 0 .2rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone; }
 
@@ -302,6 +303,9 @@ pre, code {
   overflow-wrap: break-word;
   word-wrap: break-word;
   white-space: normal; }
+
+pre > code {
+  border: none; }
 
 a, a:link, a:visited {
   color: #FFBF33; }
@@ -337,9 +341,14 @@ h3 {
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #FFBF33; }
 
 h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #FFBF33;
   font-size: 1.8rem; }
 
 p {
