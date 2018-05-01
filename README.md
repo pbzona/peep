@@ -83,6 +83,8 @@ JavaScript files are organized in two ways: sitewide and page-specific.
 
 Sitewide files are run everywhere on the blog, and are added by creating a module within the `assets/jss/scripts/` directory, importing it into `assets/js/main.js`, and making it browser-compatible by running `npm run js:build`.
 
+Page-specific scripts are only meant to run on one page, and they're included in the `assets/js/singles/` directory. These scripts should be included individually on their respective pages.
+
 ## TODO
 
 Here are a few of my plans for the immediate future:
