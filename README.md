@@ -82,7 +82,6 @@ To run a development mode that watches for changes, compiles them, and applies t
 Here are a few of my plans for the immediate future:
 
 - Reponsive display for mobile and tablet
-- Better CSS build pipeline
 - Better JS bundling
 - Add social media configuration
 - Add comments
