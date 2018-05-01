@@ -1,6 +1,6 @@
 {
   "name": "peep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A theme for Ghost",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,8 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2",
-    "browserify": "^16.2.0"
+    "browserify": "^16.2.0",
+    "node-sass": "^4.9.0"
   },
   "config": {
     "posts_per_page": 5
