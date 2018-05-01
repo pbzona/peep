@@ -23,7 +23,6 @@ function sendDataToLambda(e) {
 
   var response = document.getElementById('response');
   fetch(lambdaRequest)
-    // add success/error handling
     .then(data => {
       response.innerText = `Thanks for your message, I'll get back to you as soon as possible`;
     })

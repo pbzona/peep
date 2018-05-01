@@ -77,13 +77,19 @@ Peep uses SCSS within the `sass/` directory, which gets compiled into a `style.c
 
 To run a development mode that watches for changes, compiles them, and applies them to your site in real time, run `npm run sass:watch`. If you make changes you want to keep, you can build a production ready stylesheet (compiled, prefixed, minified) by running `npm run css:build`.
 
+### Scripts
+
+JavaScript files are organized in two ways: sitewide and page-specific.
+
+Sitewide files are run everywhere on the blog, and are added by creating a module within the `assets/jss/scripts/` directory, importing it into `assets/js/main.js`, and making it browser-compatible by running `npm run js:build`.
+
 ## TODO
 
 Here are a few of my plans for the immediate future:
 
 - Reponsive display for mobile and tablet
-- Better JS bundling
 - Add social media configuration
 - Add comments
 - Author pages?
+- JS builds with source maps for larger bundles
 
