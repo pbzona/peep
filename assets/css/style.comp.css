@@ -505,8 +505,7 @@ small {
   text-transform: uppercase;
   font-size: 1.6rem; }
   .footer__link, .footer__link:link, .footer__link:visited {
-    color: #222;
-    text-decoration: none; }
+    color: #222; }
 
 .nav {
   width: 100%;
