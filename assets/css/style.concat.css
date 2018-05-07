@@ -550,7 +550,7 @@ small {
     height: 40rem;
     background-size: cover;
     background-position: top;
-    margin: 2rem 0; }
+    margin: 0 0 2rem; }
   .blog-page__content--no-img {
     margin-top: 4rem; }
 
@@ -589,7 +589,8 @@ small {
   background-color: #FFBF33;
   position: relative;
   text-align: center;
-  padding: 3rem; }
+  padding: 3rem;
+  margin-bottom: 2rem; }
   .header__title--small {
     padding: 1rem;
     letter-spacing: 0px;

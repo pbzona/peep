@@ -8,6 +8,7 @@
 		position: relative;
 		text-align: center;
 		padding: 3rem;
+		margin-bottom: 2rem;
 
 		&--small {
 			padding: 1rem;
@@ -21,8 +22,8 @@
 			&:visited {
 				text-decoration: none;
 			}
-
 		}
+
 		&-text {
 			margin-bottom: .4rem;
 			color: $color-black;
