@@ -33,9 +33,17 @@ A confirmation message will be displayed below the contact form when the message
 <script>window.__peepCfg.contactError = 'Your custom error message';</script>
 ```
 
+### Comments
+
+Peep also supports comments via Disqus. To add comments to your site, add the following into the **Blog Header** section in your Ghost admin:
+
+    <script>window.__themeCfg.disqusUsername = 'your Disqus site shortname'</script>
+
+Make sure to replace the value with your own Disqus shortname!
+
 ### Other Theme Configuration Settings
 
-Support for social media buttons and Disqus comments via code injection is coming soon!
+Support for social media buttons via code injection is coming soon!
 
 ### Color Scheme
 
