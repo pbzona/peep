@@ -1,5 +1,5 @@
 /* PrismJS 1.14.0
-http://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+python */
+http://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+nginx+python&plugins=line-numbers */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -122,6 +122,47 @@ pre[class*="language-"] {
 	color: green;
 }
 
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+	position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
 
 html,
 body,
@@ -429,7 +470,7 @@ pre, code {
   word-wrap: break-word;
   white-space: normal; }
 
-pre > code[class^=" language-"] {
+pre > code[class*="language-"] {
   border: none; }
 
 a, a:link, a:visited {

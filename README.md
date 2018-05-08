@@ -71,8 +71,8 @@ Languages supported by this theme (with name to use after initial backticks):
 - C-like (clike)
 - Bash (bash)
 - Python (python)
-- Markup (markup)
 - CSS (css)
+- Nginx configuration (nginx)
 
 I'm open to adding more as I have a need, but feel free to either change them up in your own version by downloading Prism with additional language selections, or make a PR.
 

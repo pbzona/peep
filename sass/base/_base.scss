@@ -71,7 +71,7 @@ pre, code {
 	white-space: normal;
 }
 
-pre > code[class^=" language-"] {
+pre > code[class*="language-"] {
 	border: none;
 }
 

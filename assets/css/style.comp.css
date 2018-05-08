@@ -304,7 +304,7 @@ pre, code {
   word-wrap: break-word;
   white-space: normal; }
 
-pre > code[class^=" language-"] {
+pre > code[class*="language-"] {
   border: none; }
 
 a, a:link, a:visited {
