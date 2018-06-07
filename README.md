@@ -6,7 +6,7 @@ Peep is a theme for [Ghost](https://ghost.org), influenced by the things I wante
 
 ## Installation
 
-To install Peep on your own Ghost blog, download the repository as a zip file and upload it to the `<your ghost installation>/content/themes` directory on your server. Alternatively, you can upload the zip file via the Ghost admin panel for your site.
+To install Peep on your own Ghost blog, clone the repository and upload it to the `<your ghost installation>/content/themes` directory on your server. Alternatively, you can upload the zip file via the Ghost admin panel for your site.
 
 ## Configuration
 
