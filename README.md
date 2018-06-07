@@ -6,7 +6,7 @@ Peep is a theme for [Ghost](https://ghost.org), influenced by the things I wante
 
 ## Installation
 
-To install Peep on your own Ghost blog, download the repository as a zip file and upload it to the `content/themes` directory on your server. Alternatively, you can upload the zip file via the Ghost admin panel for your site.
+To install Peep on your own Ghost blog, download the repository as a zip file and upload it to the `<your ghost installation>/content/themes` directory on your server. Alternatively, you can upload the zip file via the Ghost admin panel for your site.
 
 ## Configuration
 
@@ -81,6 +81,7 @@ Languages supported by this theme (with name to use after initial backticks):
 - Python (python)
 - CSS (css)
 - Nginx configuration (nginx)
+- SCSS (scss)
 
 I'm open to adding more as I have a need, but feel free to either change them up in your own version by downloading Prism with additional language selections, or make a PR.
 
