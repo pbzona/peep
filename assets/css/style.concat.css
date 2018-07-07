@@ -38,7 +38,8 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #2d2d2d;
+	background: #292C34;
+	border: 1px solid #e9e9e9;
 }
 
 /* Inline code */
@@ -483,7 +484,7 @@ html {
 body {
   box-sizing: border-box;
   position: relative;
-  background-color: #222;
+  background-color: #292C34;
   min-height: 100vh;
   padding-bottom: 4rem; }
 
@@ -516,8 +517,7 @@ pre {
 
 code {
   color: #FF4334;
-  background-color: #ddd;
-  border: 1px solid #ccc;
+  background-color: #292C34;
   border-radius: 3px;
   padding: 2px;
   margin: 0 .2rem;
@@ -538,7 +538,7 @@ a, a:link, a:visited {
 
 mark, *::selection {
   background: #FFBF33;
-  color: #222;
+  color: #292C34;
   line-height: 2.6rem; }
 
 body {
@@ -700,21 +700,21 @@ small {
     text-decoration: none; }
   .header__title-text {
     margin-bottom: .4rem;
-    color: #222;
+    color: #292C34;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 6rem; }
   .header__title-desc {
     margin-top: 1rem;
     margin-bottom: 0;
-    color: #222;
+    color: #292C34;
     font-weight: 700;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase; }
 
 .header__text {
   text-decoration: none;
-  color: #222; }
+  color: #292C34; }
 
 .footer {
   display: block;
@@ -725,13 +725,13 @@ small {
   width: 100%;
   height: 4rem;
   background-color: #FFBF33;
-  color: #222;
+  color: #292C34;
   padding: 1rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 1.6rem; }
   .footer__link, .footer__link:link, .footer__link:visited {
-    color: #222; }
+    color: #292C34; }
 
 .nav {
   width: 100%;
@@ -757,7 +757,7 @@ small {
     .nav__link:hover {
       background-image: linear-gradient(to bottom, #ffbf33 60%, #ffb30d); }
       .nav__link:hover a {
-        color: #222; }
+        color: #292C34; }
     .nav__link a {
       text-align: center;
       margin: 0 auto;
@@ -765,7 +765,7 @@ small {
   .nav__active {
     background-image: linear-gradient(to bottom, #ffbf33 65%, #ffb30d); }
     .nav__active a {
-      color: #222; }
+      color: #292C34; }
 
 .pagination {
   width: 60%;
@@ -796,17 +796,17 @@ small {
     width: 100%;
     padding: 1rem;
     font-family: "Oswald", sans-serif;
-    color: #222; }
+    color: #292C34; }
   .contact-form__field {
     font-size: 1.8rem;
     transition: .4s all ease;
-    border-bottom: 0.4rem solid #222;
+    border-bottom: 0.4rem solid #292C34;
     font-weight: 400; }
     .contact-form__field:focus {
       background-color: #f8d27f;
       border-bottom: 0.4rem solid #f2a600; }
     .contact-form__field::placeholder {
-      color: #222; }
+      color: #292C34; }
     .contact-form__field--email:invalid {
       border-bottom: 0.4rem solid #FF4334; }
     .contact-form__field--body:focus {

@@ -13,7 +13,7 @@ html {
 body {
 	box-sizing: border-box;
 	position: relative;
-	background-color: #222;
+	background-color: $color-black;
 	min-height: 100vh;
 	padding-bottom: 4rem;
 }
@@ -55,8 +55,8 @@ pre {
 
 code {
 	color: $color-secondary;
-	background-color: #ddd;
-	border: 1px solid #ccc;
+	background-color: $color-black;
+	// border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 2px;
 	margin: 0 .2rem;
