@@ -37,3 +37,13 @@ function revealSocialLinks() {
 };
 
 revealSocialLinks();
+
+// Option to remove social display altogether
+function hideSocialButtons() {
+  if (window.__peepCfg.socialButtonsEnabled == false) {
+    var socialDisplay = document.querySelector('.social');
+    socialDisplay.classList.add('hidden');
+  }
+}
+
+hideSocialButtons();

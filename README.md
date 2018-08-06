@@ -66,6 +66,14 @@ Be sure to change "your username" to your actual username for each platform. If 
 
 Want to add a social profile that's not included by default? Adding new buttons is straightforward if you're familiar with Handlebars and JavaScript - the files you'll want to modify are `partials/social.hbs` and `assets/js/scripts/social.js`. If you make changes to the JS file, be sure to run the bundler before installing on your site - instructions on how to do this can be found further down this page.
 
+#### Disabling all social buttons
+
+Not everyone uses social media or wants to share their account info - if you want to disable this section altogether, add the following into the code injection section within your Ghost admin:
+
+    <script>window.__peepCfg.socialButtonsEnabled = false</script>
+
+When this setting is present, the social buttons and RSS feed link will not be displayed on your site. If you have usernames already set in your code injection, this setting will override them. If you want to temporarily disable your social links, for example, you can add this line without deleting your social configuration.
+
 ### Color Scheme
 
 While the color scheme is not configurable via the admin panel, I have added what I think is a fairly simple way to change the color palette across the theme with just one or two changes. If you're not fan of the yellow on black, you can modify the primary color by going to `sass/base/_variables.scss` and changing the `$color-primary` and `$color-secondary` values to whatever you want. When you're done, be sure to compile the SASS by running `npm run sass:build` from the root of the theme directory.
