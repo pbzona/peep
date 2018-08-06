@@ -6,15 +6,20 @@
   justify-content: space-between;
   align-items: center;
 
+  @include respond(phone) {
+		flex-direction: column;
+	}
+
   &__container {
     &--left {
       margin: 1rem 4rem 1rem 0;
       max-width: 40%;
       height: 80%;
-    }
 
-    &--right {
-
+      @include respond(phone) {
+        max-width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -24,6 +29,13 @@
     outline: 4px solid $color-primary;
     outline-offset: .3rem;
     height: 20rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+      height: 22rem;
+      outline: 2px solid $color-primary;
+      background-size: contain;
+    }
   }
 
   &__content {
@@ -36,10 +48,5 @@
 
   &__excerpt {
     word-break: break-word;
-  }
-
-  &__read-more {
-    font-size: 1.6rem;
-    @include textify;
   }
 }

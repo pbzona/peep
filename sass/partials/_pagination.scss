@@ -7,12 +7,28 @@
 	justify-content: space-between;
 	@include textify;
 
+	@include respond(tablet) {
+		width: 80%
+	}
+
+	@include respond(phone) {
+		width: 90%
+	}
+
 	&__next {
-    margin-right: 2rem;
+		margin-right: 2rem;
+
+		@include respond(phone) {
+			margin-right: 4rem;
+		}
 	}
 
 	&__prev {
 		margin-left: 2rem;
+
+		@include respond(phone) {
+			margin-left: 4rem;
+		}
 	}
 
 	&__link {

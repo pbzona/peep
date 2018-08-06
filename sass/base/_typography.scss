@@ -10,6 +10,12 @@ h1 {
 	text-transform: uppercase;
 	margin: 0 0 2.3rem 0;
 	letter-spacing: 3px;
+
+	@include respond(phone) {
+		font-size: 4rem;
+		line-height: 4.4rem;
+		letter-spacing: 2px;
+	}
 }
 
 h2 {
@@ -52,6 +58,10 @@ p, li {
 	font-family: $serif;
 	font-size: 1.6rem;
 	line-height: 2.4rem;
+
+	@include respond(phone) {
+		font-size: 1.8rem;
+	}
 }
 
 small {

@@ -10,6 +10,10 @@
 		padding: 3rem;
 		margin-bottom: 2rem;
 
+		@include respond(tablet) {
+			padding: 1.8rem 0;
+		}
+
 		&--small {
 			padding: 1rem;
 			letter-spacing: 0px;

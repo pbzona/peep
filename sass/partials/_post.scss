@@ -2,6 +2,14 @@
 	margin: 0 auto;
 	width: 60%;
 
+	@include respond(tablet) {
+		width: 80%;
+	}
+
+	@include respond(phone) {
+		width: 90%;
+	}
+
 	&__header {
 		margin: 0 auto 2rem;
 
@@ -24,6 +32,10 @@
 		font-weight: 400;
 
 		@include textify;
+
+		@include respond(phone) {
+			font-size: 1.6rem;
+		}
 	}
 
 	&__main {
@@ -35,6 +47,10 @@
 		background-size: cover;
 		background-position: top;
 		margin: 2rem 0;
+
+		@include respond(tablet) {
+			height: 30rem;
+		}
 	}
 
 	&__content {
