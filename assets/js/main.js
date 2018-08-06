@@ -3,3 +3,4 @@
 // Run the js:build script to bundle this into `bundle.js` for inclusion on the pages
 (require('./scripts/insertDate'))();
 (require('./scripts/activePage'))();
+(require('./scripts/social'))();

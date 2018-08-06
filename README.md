@@ -41,9 +41,30 @@ Peep also supports comments via Disqus. To add comments to your site, add the fo
 
 Make sure to replace the value with your own Disqus shortname!
 
-### Other Theme Configuration Settings
+### Social Media Buttons
 
-Support for social media buttons via code injection is coming soon!
+The Peep theme comes with six social media and sharing buttons:
+
+- Facebook
+- Github
+- Instagram
+- LinkedIn
+- Twitter
+- RSS feed for your blog
+
+To make these links display at the bottom of your blog, add some or all of the following to your code injection in the Ghost admin:
+
+```
+<script>window.__themeCfg.facebookUsername = 'your username';</script>
+<script>window.__themeCfg.githubUsername = 'your username';</script>
+<script>window.__themeCfg.instagramUsername = 'your username';</script>
+<script>window.__themeCfg.linkedinUsername = 'your username';</script>
+<script>window.__themeCfg.twitterUsername = 'your username';</script>
+```
+
+Be sure to change "your username" to your actual username for each platform. If you don't want a particular button to display, you can omit it from your code injection.
+
+Want to add a social profile that's not included by default? Adding new buttons is straightforward if you're familiar with Handlebars and JavaScript - the files you'll want to modify are `partials/social.hbs` and `assets/js/scripts/social.js`. If you make changes to the JS file, be sure to run the bundler before installing on your site - instructions on how to do this can be found further down this page.
 
 ### Color Scheme
 
@@ -57,7 +78,7 @@ To use inline code:
 
     `var here = 'your inline code'`
 
-To use code blocks with the default style (light gray background, red text, same as inline style):
+To use code blocks with the default style:
 
     ```
     var myCode = 'this is some code';
@@ -108,8 +129,6 @@ Page-specific scripts are only meant to run on one page, and they're included in
 Here are a few of my plans for the immediate future:
 
 - Reponsive display for mobile and tablet
-- Add social media configuration
-- Add comments
 - Author pages?
 - JS builds with source maps for larger bundles
 
