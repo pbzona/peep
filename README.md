@@ -72,7 +72,7 @@ Not everyone uses social media or wants to share their account info - if you wan
 
     <script>window.__peepCfg.socialButtonsEnabled = false</script>
 
-When this setting is present, the social buttons and RSS feed link will not be displayed on your site. If you have usernames already set in your code injection, this setting will override them. If you want to temporarily disable your social links, for example, you can add this line without deleting your social configuration.
+When this setting is present (and set to false), the social buttons and RSS feed link will not be displayed on your site. If you have usernames already set in your code injection, this setting will override them. If you want to temporarily disable your social links, for example, you can add this line without deleting your social configuration.
 
 ### Color Scheme
 
