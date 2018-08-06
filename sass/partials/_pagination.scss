@@ -1,10 +1,11 @@
 .pagination {
 	width: 60%;
 	position: relative;
-  margin: 0 auto 4rem;
+  margin: 0 auto 10rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	position: relative;
 	@include textify;
 
 	@include respond(tablet) {
