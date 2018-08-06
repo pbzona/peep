@@ -587,7 +587,7 @@ small {
 .pagination {
   width: 60%;
   position: relative;
-  margin: 0 auto 2rem;
+  margin: 0 auto 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
