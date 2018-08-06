@@ -1,6 +1,6 @@
 # Peep
 
-Peep is a theme for [Ghost](https://ghost.org), influenced by the things I wanted on my own blog but couldn't find in other themes. Most of the structure is built on top of my minimal [Sprout theme](https://github.com/pbzona/sprout).
+Peep is a mobile-responsive theme for [Ghost](https://ghost.org), influenced by the things I wanted on my own blog but couldn't find in other themes. Most of the structure is built on top of my minimal [Sprout theme](https://github.com/pbzona/sprout).
 
 ![Peep desktop view](https://s3.amazonaws.com/peepthemesamples/peep-desktop.png)
 
@@ -136,7 +136,6 @@ Page-specific scripts are only meant to run on one page, and they're included in
 
 Here are a few of my plans for the immediate future:
 
-- Reponsive display for mobile and tablet
 - Author pages?
 - JS builds with source maps for larger bundles
 
