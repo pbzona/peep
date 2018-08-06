@@ -774,10 +774,12 @@ small {
 .pagination {
   width: 60%;
   position: relative;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
+  margin-bottom: 9.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase; }
   @media only screen and (max-width: 56.25em) {
@@ -870,12 +872,14 @@ small {
 
 .social {
   width: 100%;
-  margin: 0 auto;
+  margin: 10rem auto 0;
   display: flex;
   justify-content: space-around;
   font-size: 2.4rem;
   border-top: 1px solid #FFBF33;
-  padding: 1.4rem 0; }
+  padding: 1.4rem 0;
+  position: absolute;
+  bottom: 4rem; }
   .social__button {
     background-color: #292C34;
     height: 4rem;
