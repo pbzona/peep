@@ -32,9 +32,11 @@
 
     @include respond(phone) {
       margin-bottom: 2rem;
-      height: 22rem;
+      height: auto;
+      width: 100%;
+      margin: 0 auto 2rem;;
       outline: 2px solid $color-primary;
-      background-size: contain;
+      background-position: center;
     }
   }
 

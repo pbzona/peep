@@ -487,9 +487,11 @@ small {
     @media only screen and (max-width: 37.5em) {
       .post-card__image {
         margin-bottom: 2rem;
-        height: 22rem;
+        height: auto;
+        width: 100%;
+        margin: 0 auto 2rem;
         outline: 2px solid #FFBF33;
-        background-size: contain; } }
+        background-position: center; } }
   .post-card__content {
     display: inline; }
     .post-card__content a {
@@ -676,10 +678,6 @@ small {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px; }
-
-@media only screen and (max-width: 37.5em) {
-  .tag {
-    display: none; } }
 
 .social {
   width: 100%;
