@@ -3,9 +3,9 @@
   margin: 10rem auto 0;
   display: flex;
   justify-content: space-around;
-  font-size: 2.4rem;
+  font-size: $social-icon-size;
   border-top: 1px solid $color-primary;
-  padding: 1.4rem 0;
+  padding: $social-padding 0;
   position: absolute;
   bottom: 4rem;
 
