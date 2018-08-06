@@ -7,7 +7,10 @@
   align-items: center;
 
   @include respond(phone) {
-		flex-direction: column;
+    flex-direction: column;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-primary;
+    }
 	}
 
   &__container {
@@ -31,12 +34,7 @@
     height: 20rem;
 
     @include respond(phone) {
-      margin-bottom: 2rem;
-      height: auto;
-      width: 100%;
-      margin: 0 auto 2rem;;
-      outline: 2px solid $color-primary;
-      background-position: center;
+      display: none;
     }
   }
 
@@ -50,5 +48,28 @@
 
   &__excerpt {
     word-break: break-word;
+  }
+
+  &__title {
+    @include respond(phone) {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+    }
+  }
+
+  &__read-more {
+    display: none;
+    @include respond(phone) {
+      display: block;
+      font-size: 1.6rem;
+      text-align: right;
+      background-color: $color-primary;
+      color: $color-black !important; // Sorry :(
+      padding: 1rem;
+      max-width: 30%;
+      margin-left: 80%;
+
+      @include textify;
+    }
   }
 }

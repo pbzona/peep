@@ -384,7 +384,7 @@ small {
   margin: 0 auto; }
   @media only screen and (max-width: 75em) {
     .post-list {
-      width: 80%; } }
+      width: 70%; } }
   @media only screen and (max-width: 56.25em) {
     .post-list {
       width: 90%; } }
@@ -472,7 +472,9 @@ small {
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .post-card {
-      flex-direction: column; } }
+      flex-direction: column; }
+      .post-card:not(:last-child) {
+        border-bottom: 1px solid #FFBF33; } }
   .post-card__container--left {
     margin: 1rem 4rem 1rem 0;
     max-width: 40%;
@@ -489,18 +491,31 @@ small {
     height: 20rem; }
     @media only screen and (max-width: 37.5em) {
       .post-card__image {
-        margin-bottom: 2rem;
-        height: auto;
-        width: 100%;
-        margin: 0 auto 2rem;
-        outline: 2px solid #FFBF33;
-        background-position: center; } }
+        display: none; } }
   .post-card__content {
     display: inline; }
     .post-card__content a {
       text-decoration: none; }
   .post-card__excerpt {
     word-break: break-word; }
+  @media only screen and (max-width: 37.5em) {
+    .post-card__title {
+      font-size: 4.2rem;
+      line-height: 4.8rem; } }
+  .post-card__read-more {
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .post-card__read-more {
+        display: block;
+        font-size: 1.6rem;
+        text-align: right;
+        background-color: #FFBF33;
+        color: #292C34 !important;
+        padding: 1rem;
+        max-width: 30%;
+        margin-left: 80%;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase; } }
 
 .header__menu {
   width: 100%; }
@@ -681,6 +696,10 @@ small {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px; }
+
+@media only screen and (max-width: 37.5em) {
+  .tag {
+    display: none; } }
 
 .social {
   width: 100%;

@@ -21,7 +21,7 @@
     letter-spacing: 3px;
   }
 
-  // @include respond(phone) {
-  //   display: none;
-  // }
+  @include respond(phone) {
+    display: none;
+  }
 }
