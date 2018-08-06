@@ -1,37 +1,29 @@
 {{!< default }}
 {{#post}}
-
   <header class="header">
     <div class="header__menu">
       {{navigation}}
     </div>
-
     <div class="header__title {{#is " post "}}header__title--small{{/is}}">
       <h1 class="header__title-text">{{title}}</h1>
     </div>
   </header>
-
   <main class="{{post_class}}">
     <div class="contact-form">
       <form id="contact-form">
         <input class="contact-form__field contact-form__field--email" type="email" name="email" placeholder="Email address" id="form-email">
-
         <textarea class="contact-form__field contact-form__field--body" rows="8" cols="40" name="body" placeholder="Your message here..." id="form-body"></textarea>
-
         <input class="contact-form__button" type="submit" name="submit" value="Submit" id="form-submit">
       </form>
     </div>
-
     <div class="response-handler">
       <h2 class="response-handler__message" id="response">
       </h2>
     </div>
-
     <section id="contact-page-content">
       {{content}}
     </section>
   </main>
-
   {{> footer}}
   <script src="{{asset "js/singles/contactForm.js"}}"></script>
 {{/post}}

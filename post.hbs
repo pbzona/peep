@@ -1,33 +1,26 @@
 {{!< default }}
-
 {{#post}}
-
 	{{> header}}
 	<main class="{{post_class}}">
 		<article class="post__main {{#unless feature_image}}no-image{{/unless}}">
-
 			{{#if feature_image}}
-				<figure class="post__image" style="background-image: url({{feature_image}})">
-				</figure>
+			<figure class="post__image" style="background-image: url({{feature_image}})">
+			</figure>
 			{{/if}}
-
 			<section class="post__meta">
 				<time class="post__date" datetime="{{date format=" MMMM DD YYYY "}}">
 					{{date format="MMMM DD YYYY"}}
 				</time>
 				{{!-- {{tags prefix=" in "}} --}}
 			</section>
-
 			<header class="post__header">
 				<h1 class="post__header-text">{{title}}</h1>
 			</header>
-
 			<section class="post__content {{#unless feature_image}}post__content--no-img{{/unless}}">
 				{{content}}
 			</section>
-
 			<nav class="post__nav">
-				 {{#next_post}}
+				{{#next_post}}
 				<div class="post__nav--item post__nav--next">
 					<a href="{{url}}">&larr; {{title}}</a>
 				</div>
@@ -36,11 +29,9 @@
 					<a href="{{url}}">{{title}} &rarr;</a>
 				</div>
 				{{/prev_post}}
-			</div>
-
+				</div>
 		</article>
 		{{> disqus}}
 	</main>
 	{{> footer}}
-
 {{/post}}
