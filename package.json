@@ -10,7 +10,8 @@
     "css:prefix": "postcss --use autoprefixer -b 'last 5 versions' assets/css/style.concat.css -o assets/css/style.prefix.css",
     "css:compress": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
     "css:build": "npm-run-all sass:compile css:concat css:prefix css:compress",
-    "js:build": "browserify assets/js/main.js | uglifyjs > assets/js/bundle.js"
+    "js:build": "browserify assets/js/main.js | uglifyjs > assets/js/bundle.js",
+    "build": "npm-run-all css:build js:build"
   },
   "author": {
     "email": "phil.b.zona@gmail.com"
