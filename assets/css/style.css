@@ -253,7 +253,7 @@ th {
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 37.5em) {
@@ -382,6 +382,9 @@ small {
 .post-list {
   width: 65%;
   margin: 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .post-list {
+      width: 80%; } }
   @media only screen and (max-width: 56.25em) {
     .post-list {
       width: 90%; } }
