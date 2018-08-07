@@ -59,15 +59,23 @@
 
   &__read-more {
     display: none;
+
     @include respond(phone) {
-      display: block;
+      display: flex;
+      justify-content: right;
+      margin-bottom: 2rem;
+    }
+
+    &__button,
+    &__button:link,
+    &__button:visited {
       font-size: 1.6rem;
-      text-align: right;
+      flex: 0 1 25%;
+      margin: 0 0 0 auto;
       background-color: $color-primary;
-      color: $color-black !important; // Sorry :(
+      color: $color-black;
       padding: 1rem;
-      max-width: 30%;
-      margin-left: 80%;
+      white-space: nowrap;
 
       @include textify;
     }

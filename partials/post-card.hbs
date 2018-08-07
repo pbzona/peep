@@ -13,7 +13,9 @@
 				<h2 class="post-card__title">{{title}}</h2>
 			</a>
 			<p class="post-card__excerpt">{{excerpt characters="140"}}...</p>
-			<a class="post-card__read-more" href="{{url}}">Read More &rarr;</a>
+			<div class="post-card__read-more">
+				<a class="post-card__read-more__button" href="{{url}}">Read More &rarr;</a>
+			</div>
 			{{#if tags}}
 				<div class="tag">
 					<ul class="tag__list">
