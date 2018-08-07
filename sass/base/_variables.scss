@@ -27,3 +27,5 @@ $serif: 'Droid Serif', serif;
 $footer-height: 4rem;
 $social-icon-size: 2.4rem;
 $social-padding: 1.4rem;
+
+$end-of-content-margin: $footer-height + $social-icon-size + (2 * $social-padding);

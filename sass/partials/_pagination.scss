@@ -2,7 +2,7 @@
 	width: 60%;
 	position: relative;
 	margin: 0 auto;
-	margin-bottom: $footer-height + $social-icon-size + (2 * $social-padding);
+	margin-bottom: $end-of-content-margin;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
