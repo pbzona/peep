@@ -526,10 +526,11 @@ small {
   position: relative;
   text-align: center;
   padding: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .header__title {
-      padding: 1.8rem 0; } }
+      padding: 1.8rem 3rem; } }
   .header__title--small {
     padding: 1rem;
     letter-spacing: 0px;

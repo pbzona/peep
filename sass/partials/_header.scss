@@ -9,9 +9,10 @@
 		text-align: center;
 		padding: 3rem;
 		margin-bottom: 2rem;
+		width: 100%;
 
 		@include respond(tablet) {
-			padding: 1.8rem 0;
+			padding: 1.8rem 3rem;
 		}
 
 		&--small {
