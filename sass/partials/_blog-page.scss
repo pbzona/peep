@@ -1,21 +1,20 @@
 .blog-page {
-	margin: 0 auto;
-	width: 60%;
+  margin: 0 auto;
+  width: 60%;
 
-	&__main {
-		width: 100%;
-		margin-bottom: $end-of-content-margin + 4rem;;
-	}
+  &__main {
+    width: 100%;
+    margin-bottom: $end-of-content-margin + 4rem;
+  }
 
-	&__image {
-		height: 40rem;
-		background-size: cover;
-		background-position: top;
-		margin: 0 0 2rem;
+  &__image {
+    height: 40rem;
+    background-size: cover;
+    background-position: top;
+    margin: 0 0 2rem;
   }
 
   &__content {
-
     &--no-img {
       margin-top: 4rem;
     }
