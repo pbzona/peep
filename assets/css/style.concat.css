@@ -621,7 +621,8 @@ small {
   margin: 0 auto;
   width: 60%; }
   .blog-page__main {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 13.2rem; }
   .blog-page__image {
     height: 40rem;
     background-size: cover;
@@ -673,16 +674,19 @@ small {
     display: none; }
     @media only screen and (max-width: 37.5em) {
       .post-card__read-more {
-        display: block;
-        font-size: 1.6rem;
-        text-align: right;
-        background-color: #FFBF33;
-        color: #292C34 !important;
-        padding: 1rem;
-        max-width: 30%;
-        margin-left: 80%;
-        font-family: "Oswald", sans-serif;
-        text-transform: uppercase; } }
+        display: flex;
+        justify-content: right;
+        margin-bottom: 2rem; } }
+    .post-card__read-more__button, .post-card__read-more__button:link, .post-card__read-more__button:visited {
+      font-size: 1.6rem;
+      flex: 0 1 25%;
+      margin: 0 0 0 auto;
+      background-color: #FFBF33;
+      color: #292C34;
+      padding: 1rem;
+      white-space: nowrap;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase; }
 
 .header__menu {
   width: 100%; }
@@ -692,10 +696,11 @@ small {
   position: relative;
   text-align: center;
   padding: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .header__title {
-      padding: 1.8rem 0; } }
+      padding: 1.8rem 3rem; } }
   .header__title--small {
     padding: 1rem;
     letter-spacing: 0px;
