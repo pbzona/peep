@@ -613,7 +613,7 @@ small {
   width: 60%;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 8.4rem;
+  margin-bottom: 10.4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -627,7 +627,7 @@ small {
     .pagination {
       width: 90%; } }
   .pagination__next {
-    margin-right: 2rem; }
+    margin-right: 0rem; }
     @media only screen and (max-width: 37.5em) {
       .pagination__next {
         margin-right: 4rem; } }
@@ -636,9 +636,12 @@ small {
     @media only screen and (max-width: 37.5em) {
       .pagination__prev {
         margin-left: 4rem; } }
-  .pagination__link {
+  .pagination__link, .pagination__link:link, .pagination__link:visited {
     font-size: 2rem;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #ffbf33;
+    color: #292c34;
+    padding: 0.8rem 1.2rem; }
 
 .contact-form {
   text-align: center;
