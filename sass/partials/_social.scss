@@ -16,7 +16,7 @@
     color: $color-primary;
     flex: 1 1 auto;
     cursor: pointer;
-    transition: all .2s;
+    transition: all 0.2s;
 
     display: flex;
     justify-content: center;
@@ -26,6 +26,10 @@
       background-color: $color-primary;
       color: $color-black;
     }
+  }
+
+  &--post {
+    position: relative;
   }
 }
 
