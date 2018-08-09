@@ -4,8 +4,7 @@
   display: flex;
   justify-content: space-around;
   font-size: $social-icon-size;
-  border-top: 1px solid $color-primary;
-  padding: $social-padding 0;
+
   position: absolute;
   bottom: 4rem;
 
@@ -23,12 +22,21 @@
     align-items: center;
 
     &:hover {
-      background-color: $color-primary;
       color: $color-black;
+      background-image: linear-gradient(
+        to bottom,
+        rgba($color-primary, 1) 60%,
+        rgba(lighten($color-primary-dark-1, 5%), 1)
+      );
+    }
+
+    &__icon {
+      display: inline-block;
     }
   }
 
   &--post {
+    border-top: 1px solid $color-primary;
     position: relative;
   }
 }

@@ -1,40 +1,40 @@
 .pagination {
-	width: 60%;
-	position: relative;
-	margin: 0 auto;
-	margin-bottom: $end-of-content-margin;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	position: relative;
-	@include textify;
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: $end-of-content-margin + 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  @include textify;
 
-	@include respond(tablet) {
-		width: 80%
-	}
+  @include respond(tablet) {
+    width: 80%;
+  }
 
-	@include respond(phone) {
-		width: 90%
-	}
+  @include respond(phone) {
+    width: 90%;
+  }
 
-	&__next {
-		margin-right: 2rem;
+  &__next {
+    margin-right: 2rem;
 
-		@include respond(phone) {
-			margin-right: 4rem;
-		}
-	}
+    @include respond(phone) {
+      margin-right: 4rem;
+    }
+  }
 
-	&__prev {
-		margin-left: 2rem;
+  &__prev {
+    margin-left: 2rem;
 
-		@include respond(phone) {
-			margin-left: 4rem;
-		}
-	}
+    @include respond(phone) {
+      margin-left: 4rem;
+    }
+  }
 
-	&__link {
-		font-size: 2rem;
-		text-decoration: none;
-	}
+  &__link {
+    font-size: 2rem;
+    text-decoration: none;
+  }
 }
