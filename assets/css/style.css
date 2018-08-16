@@ -645,6 +645,10 @@ small {
     background-color: #ffbf33;
     color: #292c34;
     padding: 0.8rem 1.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .pagination__link, .pagination__link:link, .pagination__link:visited {
+        background-color: #292c34;
+        color: #ffbf33; } }
 
 .contact-form {
   text-align: center;

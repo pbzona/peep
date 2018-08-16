@@ -41,5 +41,10 @@
     background-color: $color-primary;
     color: $color-black;
     padding: 0.8rem 1.2rem;
+
+    @include respond(phone) {
+      background-color: $color-black;
+      color: $color-primary;
+    }
   }
 }
