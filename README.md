@@ -132,6 +132,14 @@ Sitewide files are run everywhere on the blog, and are added by creating a modul
 
 Page-specific scripts are only meant to run on one page, and they're included in the `assets/js/singles/` directory. These scripts should be included individually on their respective pages.
 
+### Full Build
+
+To run a full build (both CSS and JS):
+
+    npm run build
+
+This is the recommended method for creating production ready assets when creating a new version.
+
 ## TODO
 
 Here are a few of my plans for the immediate future:
