@@ -11,7 +11,7 @@
     &:not(:last-child) {
       border-bottom: 1px solid $color-primary;
     }
-	}
+  }
 
   &__container {
     &--left {
@@ -30,7 +30,7 @@
     background-position: top;
     background-size: cover;
     outline: 4px solid $color-primary;
-    outline-offset: .3rem;
+    outline-offset: 0.3rem;
     height: 20rem;
 
     @include respond(phone) {
@@ -52,8 +52,8 @@
 
   &__title {
     @include respond(phone) {
-      font-size: 4.2rem;
-      line-height: 4.8rem;
+      font-size: 4rem;
+      line-height: 4.2rem;
     }
   }
 

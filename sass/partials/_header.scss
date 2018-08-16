@@ -1,53 +1,57 @@
 .header {
-	&__menu {
-		width: 100%;
-	}
+  &__menu {
+    width: 100%;
+  }
 
-	&__title {
-		background-color: $color-primary;
-		position: relative;
-		text-align: center;
-		padding: 3rem;
-		margin-bottom: 2rem;
-		width: 100%;
+  &__title {
+    background-color: $color-primary;
+    position: relative;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
 
-		@include respond(tablet) {
-			padding: 1.8rem 3rem;
-		}
+    @include respond(tablet) {
+      padding: 1.8rem 3rem;
+    }
 
-		&--small {
-			padding: 1rem;
-			letter-spacing: 0px;
-			font-weight: 700;
-		}
+    &--small {
+      padding: 1rem;
+      letter-spacing: 0px;
+      font-weight: 700;
+    }
 
-		&-link {
-			&,
-			&:link,
-			&:visited {
-				text-decoration: none;
-			}
-		}
+    &-link {
+      &,
+      &:link,
+      &:visited {
+        text-decoration: none;
+      }
+    }
 
-		&-text {
-			margin-bottom: .4rem;
-			color: $color-black;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-size: 6rem;
-		}
+    &-text {
+      margin-bottom: 0.4rem;
+      color: $color-black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 6rem;
 
-		&-desc {
-			margin-top: 1rem;
-			margin-bottom: 0;
-			color: $color-black;
-			font-weight: 700;
-			@include textify;
-		}
-	}
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+    }
 
-	&__text {
-		text-decoration: none;
-		color: $color-black;
-	}
+    &-desc {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      color: $color-black;
+      font-weight: 700;
+      @include textify;
+    }
+  }
+
+  &__text {
+    text-decoration: none;
+    color: $color-black;
+  }
 }
