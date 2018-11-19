@@ -3,92 +3,129 @@
 *::before {
   margin: 0;
   padding: 0;
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 
-	@include respond(tablet-long) {
+  @include respond(tablet-long) {
     font-size: 56.25%;
   }
 
-	@include respond(phone) {
-		font-size: 50%;
-	}
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 body {
-	box-sizing: border-box;
-	position: relative;
-	background-color: $color-black;
-	min-height: 100vh;
-	padding-bottom: 4rem;
+  box-sizing: border-box;
+  position: relative;
+  background-color: $color-black;
+  min-height: 100vh;
+  padding-bottom: 4rem;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-	margin-bottom: 2rem;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
 }
 
-p, pre, code {
-	line-height: 2.6rem;
+p,
+pre,
+code {
+  line-height: 2.6rem;
 }
 
-ol, ul {
-	margin-left: 4rem;
-	margin-bottom: 2rem;
+ol,
+ul {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  list-style: none;
 }
 
-ul > li {
-	list-style-type: disc;
+ol {
+  counter-reset: li;
+}
+
+li {
+  counter-increment: li;
+}
+
+li::before {
+  color: $color-primary;
+  display: inline-block;
+  width: 1.6rem;
+}
+
+ul > li::before {
+  content: '\2022';
+  margin-left: -0.8rem;
+}
+
+ol > li::before {
+  content: counter(li);
+  margin-left: -1.6rem;
+  margin-right: 0.8rem;
+  text-align: right;
+  direction: rtl; // Allow numbered list items to overflow the left side of the box >:)
 }
 
 hr {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 blockquote {
-	padding-left: 2rem;
-	border-left: .4rem solid #888
+  padding-left: 2rem;
+  border-left: 0.4rem solid #888;
 }
 
 pre {
-	font-size: 1.6rem;
-	margin: 0 4rem 2rem;
+  font-size: 1.6rem;
+  margin: 0 4rem 2rem;
 }
 
 code {
-	color: $color-secondary;
-	background-color: $color-black;
-	// border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 2px;
-	margin: 0 .2rem;
-	-webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
+  color: $color-secondary;
+  background-color: $color-black;
+  // border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 0 0.2rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
-pre, code {
-	word-break: break-all;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	white-space: normal;
+pre,
+code {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
-pre > code[class*="language-"] {
-	border: none;
+pre > code[class*='language-'] {
+  border: none;
 }
 
-a, a:link, a:visited {
-	color: $color-primary;
+a,
+a:link,
+a:visited {
+  color: $color-primary;
 }
 
-mark, *::selection {
-	background: $color-primary;
-	color: $color-black;
-	line-height: 2.6rem;
+mark,
+*::selection {
+  background: $color-primary;
+  color: $color-black;
+  line-height: 2.6rem;
 }
