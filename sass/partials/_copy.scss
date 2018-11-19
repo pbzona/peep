@@ -1,0 +1,12 @@
+// Override PrismJS copy button styles
+div.code-toolbar>.toolbar a, div.code-toolbar>.toolbar button, div.code-toolbar>.toolbar span {
+  font-size: 1.4rem;
+  padding: .4rem .8rem;
+  background: $color-primary;
+  color: $color-black;
+
+  &:hover {
+    background: $color-primary-dark-1;
+    color: $color-black;
+  }
+}

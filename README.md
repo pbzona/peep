@@ -14,7 +14,7 @@ Peep adheres to the [Ghost Theme Configuration Approach](https://github.com/unwi
 
 ### Contact Form
 
-The Peep contact form is powered by AWS Lambda, and it is optional. To add it, follow the steps [here](https://www.cloudassessments.com/blog/how-to-build-a-serverless-contact-form-on-aws/) to create a serverless contact form, and add the following to the **Blog Header** section in your Ghost admin (under **Code injection**):
+The Peep contact form is powered by AWS Lambda, and it is optional. To add it, follow the steps [here](https://linuxacademy.com/blog/aws/how-to-build-a-serverless-contact-form-on-aws/) to create a serverless contact form, and add the following to the **Blog Header** section in your Ghost admin (under **Code injection**):
 
 ```
 <script>window.__peepCfg.contactForm = 'your API Gateway endpoint';</script>
@@ -106,13 +106,18 @@ Languages supported by this theme (with name to use after initial backticks):
 
 - JavaScript (javascript)
 - C-like (clike)
-- Bash (bash)
-- Python (python)
 - CSS (css)
+- Bash (bash)
 - Nginx configuration (nginx)
+- Python (python)
+- React JSX (react)
 - SCSS (scss)
 
 I'm open to adding more as I have a need, but feel free to either change them up in your own version by downloading Prism with additional language selections, or make a PR.
+
+Prism snippets also include a "copy-to-clipboard" feature, where if you hover on a code snippet, a copy button appears to its right. This button can be styled in the `_copy.scss` partial if you decide to use it.
+
+If you want to cut down the bundle size, which is currently about 30kB, you can also download your own selection from the [PrismJS site](https://prismjs.com/download.html), choose only the ones you need, and replace the respective files in `assets/`.
 
 ## Development
 
