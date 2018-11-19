@@ -86,7 +86,7 @@ hr {
 
 blockquote {
   padding-left: 2rem;
-  border-left: 0.4rem solid #888;
+  border-left: 0.4rem solid $color-primary;
 }
 
 pre {
@@ -97,7 +97,6 @@ pre {
 code {
   color: $color-secondary;
   background-color: $color-black;
-  // border: 1px solid #ccc;
   border-radius: 3px;
   padding: 2px;
   margin: 0 0.2rem;

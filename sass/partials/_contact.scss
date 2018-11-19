@@ -6,7 +6,8 @@
     resize: none;
   }
 
-  &__field, &__button {
+  &__field,
+  &__button {
     border: none;
     display: block;
     margin: 0 auto 1rem;
@@ -18,13 +19,13 @@
 
   &__field {
     font-size: 1.8rem;
-    transition: .4s all ease;
-    border-bottom: .4rem solid $color-black;
+    transition: 0.4s all ease;
+    border-bottom: 0.4rem solid $color-black;
     font-weight: 400;
 
     &:focus {
-      background-color: $color-primary-light-1; //lighten($color-primary-light-2, 5%);
-      border-bottom: .4rem solid $color-primary-dark-1;
+      background-color: $color-primary-light-1;
+      border-bottom: 0.4rem solid $color-primary-dark-1;
     }
 
     &::placeholder {
@@ -33,7 +34,7 @@
 
     &--email {
       &:invalid {
-        border-bottom: .4rem solid $color-secondary;
+        border-bottom: 0.4rem solid $color-secondary;
       }
     }
 
@@ -48,10 +49,11 @@
     background-color: $color-primary;
     font-size: 2rem;
     text-transform: uppercase;
-    transition: .4s all ease;
+    transition: 0.4s all ease;
     font-weight: 700;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background-color: $color-primary-dark-2;
       outline: none;
     }
@@ -60,7 +62,7 @@
 
 .response-handler {
   height: 10rem;
-  transition: .4s all ease;
+  transition: 0.4s all ease;
   text-align: center;
 }
 
