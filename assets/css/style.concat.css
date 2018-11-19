@@ -1014,3 +1014,12 @@ small {
 
 .disqus {
   margin-bottom: 4rem; }
+
+div.code-toolbar > .toolbar a, div.code-toolbar > .toolbar button, div.code-toolbar > .toolbar span {
+  font-size: 1.4rem;
+  padding: .4rem .8rem;
+  background: #ffbf33;
+  color: #292c34; }
+  div.code-toolbar > .toolbar a:hover, div.code-toolbar > .toolbar button:hover, div.code-toolbar > .toolbar span:hover {
+    background: #f2a600;
+    color: #292c34; }

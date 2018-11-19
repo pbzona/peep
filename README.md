@@ -115,7 +115,9 @@ Languages supported by this theme (with name to use after initial backticks):
 
 I'm open to adding more as I have a need, but feel free to either change them up in your own version by downloading Prism with additional language selections, or make a PR.
 
-If you want to cut down the bundle size, you can also download your own selection from the [PrismJS site](https://prismjs.com/download.html), choose only the ones you need, and replace the respective files in `assets/`.
+Prism snippets also include a "copy-to-clipboard" feature, where if you hover on a code snippet, a copy button appears to its right. This button can be styled in the `_copy.scss` partial if you decide to use it.
+
+If you want to cut down the bundle size, which is currently about 30kB, you can also download your own selection from the [PrismJS site](https://prismjs.com/download.html), choose only the ones you need, and replace the respective files in `assets/`.
 
 ## Development
 
