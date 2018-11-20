@@ -12,7 +12,7 @@
 	}
 
 	&__link {
-		list-style-type: none;
+		list-style: none;
 		display: inline-flex;
 		padding: 1rem;
 		width: 100%;
@@ -33,6 +33,10 @@
 			a {
 				color: $color-black;
 			}
+		}
+
+		&::before {
+			content: none;
 		}
 
 		a {

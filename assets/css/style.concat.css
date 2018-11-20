@@ -852,7 +852,7 @@ small {
     align-items: center;
     margin: 0; }
   .nav__link {
-    list-style-type: none;
+    list-style: none;
     display: inline-flex;
     padding: 1rem;
     width: 100%;
@@ -866,6 +866,8 @@ small {
       background-image: linear-gradient(to bottom, #ffbf33 60%, #ffb30d); }
       .nav__link:hover a {
         color: #292c34; }
+    .nav__link::before {
+      content: none; }
     .nav__link a {
       text-align: center;
       margin: 0 auto;
@@ -970,6 +972,8 @@ small {
   list-style-type: none;
   border: 2px solid #ffbf33;
   padding: .6rem .8rem; }
+  .tag__item::before {
+    content: none; }
 
 .tag__link, .tag__link:link, .tag__link:visited {
   font-family: "Oswald", Helvetica, Arial, sans-serif;

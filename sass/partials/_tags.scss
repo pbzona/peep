@@ -11,6 +11,10 @@
     list-style-type: none;
     border: 2px solid $color-primary;
     padding: .6rem .8rem;
+
+    &::before {
+			content: none;
+		}
   }
   &__link,
   &__link:link,
